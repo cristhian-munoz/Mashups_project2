@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<!-- <meta name="viewprt" content="width=device-width">  alt="AccuWeather APIs" -->
+		<title>Hola Timón</title> 
+		<style>
+
+			{margin:0;padding: 0;} 
+
+			canvas {
+				position: absolute;
+				display: block;
+				z-index:-1;
+			}
+		</style>
+		<link rel="stylesheet" type="text/css" href="style.css" />
+
+	</head>
+	<body>
+		<canvas id="canvas" > </canvas>
+		<div class='header'>
+			<img src="http://developer.accuweather.com/sites/all/themes/accuweather/logo.png" />
+			<p id="location">San José, Costa Rica</p>
+			
+		</div>
+		<a id="about_p" href="about.html">About</a>
+		<div class='welcome' >
+			<p> Hey Mom, this is an info page about a couple of weather forecasts you may be interested in. Mouseover the points in the graph and discover your forecasts. </p>
+			<p> Are you are outside of San José? If so, change your location in this box: </p>
+			<input type="text" id="location-input" class="input-box" placeholder="San José, Costa Rica" required > </input>
+			<button class='go-Button' id="goButton"> Go! </button>
+		</div>
+		
+		<h1> Weather Forecast </h1>
+		
+		<div class='titles2'>
+			<h2 id="title1" class='titles'> Arthritis Pain Forecast </h2>
+			<!--div class='titles'-->
+			<h2 id="title2" class='titles'>UV Index</h2>
+		<!--<div class='titles'-->
+			<h2 id="title3" class='titles'>Lawn Mowing Forecast</h2>
+		</div>
+
+		<div id = "chart" class='container'></div>
+		<div id = "grassCutting" >
+			<img id = "lawn" src="lawn-mower.png" />
+		</div>
+		<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+		<script src="http://underscorejs.org/underscore-min.js"></script>
+		<script src="http://d3js.org/d3.v3.min.js"></script>
+		<script src="scripts.js"></script>
+	</body>
+</html>

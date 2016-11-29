@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<!-- <meta name="viewprt" content="width=device-width"> -->
+		<title>About Project2</title> 
+				<style>
+
+			{margin:0;padding: 0;} 
+
+			canvas {
+				position: absolute;
+				display: block;
+				z-index:-1;
+			}
+		</style>
+	 	<link rel="stylesheet" type="text/css" href="style2.css" /> 
+		
+	</head>
+	<body>
+		<canvas id="canvas" > </canvas>
+		<div class='header'>
+			<img src="http://developer.accuweather.com/sites/all/themes/accuweather/logo.png" />
+			<p id="location">San José, Costa Rica</p>
+		</div>
+
+		<div class="container" >
+			<h1> Hola Timon </h1>
+			<div class="info">
+				<p> Cristhian Muñoz </p>
+				<p> Professor: Craig Protzel</p>
+			</div>
+		</div>
+
+
+		<div>
+			<h2> What does the page do? </h2>
+				<ol>
+					<li>It is basically an info page for my mother, that displays weather forecasts that might be useful for her.</li>
+					<li>The forecasts come along with recomendations, and the fact that the page displays 5 days of forecasts helps her to plan ahead.</li>
+					<li>The page allows the user to change the location and update the forecasts accordingly.</li>
+				</ol>
+		</div>
+
+		<div>
+			<h2>API's used</h2>
+				<ol>
+					<li>Accuweahter Index Forecast API: displays the forecasts for 5 consecutive days of a certain index. The indices used were: UV index, Arthritis Pain, and Lawn Mowing</li>
+					<li>Accuweather Text Search API: this API provides the page with the 'location key' unique of the city the user is requesting forecasts from.</li>
+				</ol>
+		</div>
+
+		<div>
+			<h2>Feedback</h2> 
+				<ul>
+					<li>None that I remember, there was no time. However, the page can be enhaced in many ways.</li>
+				</ul>
+		</div>
+
+		<div>
+			<h2>Issues</h2>
+				<h3>Technical Issues</h3>
+					<ul>
+						<li>Most of the issues came from not being familiarized with the libraries we were using.</li>
+						<li>However, my main technical issue came with positioning inside the svg, and familiarizing with the loop structures that D3 provide.</li>
+					</ul>
+				<h3>Design Issues</h3>
+					<ul>
+						<li>I never felt fully confortable with the design of the page.</li>
+						<li> The raining effect is pretty dinamic, but it can bother the user at the time of actually interacting with the page. </li>
+					</ul>
+		</div>
+
+		<div>
+			<h2>Lessons learnt</h2>
+				<ul>
+					<li>Like last time, solve one thing at a time, and re-evaluate the importance of every feature when encountering problems. </li>
+					<li>Like last time, never underestimate the complexity of the technical issues.</li>
+					<li>Spend more time on the design, and prioritize it.</li>
+				</ul>
+		</div>
+
+		<div>
+			<h2>Next Steps</h2>
+				<ol>
+					<li>I have to work really hard on the creative part of the page. If I stick to the information it is displaying right now, it has to be displayed in a much more creative way.</li>
+					<li>Keep considering other ideas for the final project.</li>
+				</ol>
+		</div>
+		<!-- <script src="jquery.js"></script -->
+		<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+		<script src="http://underscorejs.org/underscore-min.js"></script>
+		<script src="http://d3js.org/d3.v3.min.js"></script>
+		<script src="script2.js"></script>
+	</body>
+</html>
