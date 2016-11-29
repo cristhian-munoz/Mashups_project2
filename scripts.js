@@ -20,7 +20,7 @@ function makeValArray(data) {
 
 //This function retrieves the location key of the city we are searching for.
 function getLocationKey (city){
-	var locationURL = 'http://dataservice.accuweather.com//locations/v1/search?apikey=xTHYAI2t6JF0YFftdoE70JSFwkQC6tLd=' + city;
+	var locationURL = 'https://dataservice.accuweather.com//locations/v1/search?apikey=xTHYAI2t6JF0YFftdoE70JSFwkQC6tLd=' + city;
 	return $.ajax({
 		url: locationURL,
 		type: 'GET',
@@ -30,7 +30,7 @@ function getLocationKey (city){
 
 //This function retrieves a 5-day Forecast of the specific index requested
 function getForecast (index) {
-	var forecastURL = 'http://dataservice.accuweather.com/indices/v1/daily/5day/' + locationKey + '/' + index;
+	var forecastURL = 'https://dataservice.accuweather.com/indices/v1/daily/5day/' + locationKey + '/' + index;
 	var accuKEY = '?apikey=' + 'xTHYAI2t6JF0YFftdoE70JSFwkQC6tLd';
 	console.log(forecastURL+accuKEY);
 	return $.ajax({
